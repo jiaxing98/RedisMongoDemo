@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "faae80e1-e1d8-40fd-a048-cc8c4d71f74d",
+		"name": "RedisMongoDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12041611"
+	},
+	"item": [
+		{
+			"name": "GetAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7018/api/v1/product/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7018",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7018/api/v1/product/:productId",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7018",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						":productId"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "b6a6214b-9e72-479c-bc3d-faa03445d537"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"Small Potion\",\r\n    \"price\": \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7018/api/v1/product/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7018",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": \"\",\r\n    \"productName\": \"Small Potion\",\r\n    \"price\": \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7018/api/v1/product/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7018",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7018/api/v1/product/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7018",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
